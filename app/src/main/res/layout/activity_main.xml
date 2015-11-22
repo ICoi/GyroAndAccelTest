@@ -10,14 +10,31 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView" />
 
+
+    <TextView android:text="gravity " android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gravityTV"
+        android:textSize="30dp"
+        android:layout_below="@+id/btn_finish"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+
+    <TextView android:text="pressure " android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pressureTV"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/gravityTV"
+        android:layout_centerHorizontal="true" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="First"
         android:id="@+id/btn_first"
+        android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/btn_second"
-        android:layout_alignStart="@+id/btn_second"
-        android:layout_marginTop="78dp" />
+        android:layout_alignStart="@+id/btn_second" />
 
     <Button
         android:layout_width="wrap_content"
@@ -68,4 +85,14 @@
         android:layout_below="@+id/textView"
         android:layout_toRightOf="@+id/btn_first"
         android:layout_toEndOf="@+id/btn_first" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send22"
+        android:id="@+id/button_send2"
+        android:layout_below="@+id/pressureTV"
+        android:layout_alignLeft="@+id/btn_first"
+        android:layout_alignStart="@+id/btn_first" />
+
 </RelativeLayout>
